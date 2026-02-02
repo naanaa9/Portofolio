@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { ArrowRight, Linkedin, Mail } from "lucide-react";
+import { Gitlab ,Github, ArrowRight, Linkedin, Mail } from "lucide-react";
 
 export function Hero() {
   const scrollToSection = (id: string) => {
@@ -44,6 +44,25 @@ export function Hero() {
         </div>
         
         <div className="flex gap-4 justify-center pt-4">
+          <a
+            href="https://github.com/naanaa9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full hover:bg-accent transition-colors"
+            aria-label="GitHub"
+          >
+            <Github className="w-6 h-6" />
+          </a>
+
+          <a
+            href="https://gitlab.com/dianaksm789"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full hover:bg-accent transition-colors"
+            aria-label="GitLab"
+          >
+            <Gitlab className="w-6 h-6" />
+          </a>
           <a 
             href="https://www.linkedin.com/in/dianakusumaningsih9/" 
             target="_blank" 

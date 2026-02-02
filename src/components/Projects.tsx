@@ -6,20 +6,20 @@ import { ExternalLink, Github } from "lucide-react";
 export function Projects() {
   const projects = [
     {
-      title: "Laravel E-Commerce Platform",
-      description: "A scalable multi-vendor marketplace built with Laravel featuring payment processing, order management, real-time notifications, and comprehensive admin dashboard.",
-      image: "https://images.unsplash.com/photo-1677214467820-ab069619bbb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXNpZ258ZW58MXx8fHwxNzYwMDcwODIxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Laravel 10", "MySQL", "Redis", "Stripe API"],
-      github: "https://github.com/naanaa9/mini_project",
-      demo: "https://example.com"
+      title: "React Admin Dashboard",
+      description: "A modern admin dashboard built with React featuring data management (CRUD), authentication-ready layout, responsive UI, and reusable components designed for internal tools and admin systems.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      tags: ["React", "Vite", "Tailwind CSS", "Admin Dashboard"],
+      github: "https://github.com/naanaa9/react-admin-dashboard",
+      demo: "https://spendly-pearl.vercel.app"
     },
     {
-      title: "Custom WordPress Plugin Suite",
-      description: "A collection of enterprise WordPress plugins for advanced SEO management, custom post types, and API integrations. Handles over 100k daily requests.",
-      image: "https://images.unsplash.com/photo-1658953229625-aad99d7603b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzYwMDAxNDA5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["WordPress", "PHP 8", "REST API", "WP CLI"],
-      github: "https://github.com",
-      demo: "https://example.com"
+      title: "Internship Management System",
+      description: "A web-based internship management system designed to manage intern data, mentors, and activity reports through a centralized admin dashboard. Built to support real-world internal management workflows.",
+      image: "https://images.unsplash.com/photo-1658953229625-aad99d7603b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      tags: ["React", "Vite", "Tailwind CSS", "Admin System"],
+      github: "https://github.com/naanaa9/internship-management-system",
+      demo: "https://task-management-app-eta-two.vercel.app"
     },
     {
       title: "RESTful API Microservices",

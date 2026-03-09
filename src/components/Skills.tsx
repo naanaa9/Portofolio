@@ -2,11 +2,23 @@ export function Skills() {
   const skillCategories = [
     {
       title: "Database",
-      skills: ["MySQL", "Oracle DB", "MariaDB"]
+      skills: ["MySQL", "Oracle DB", "PostgreSQL", "DBeaver"]
     },
     {
       title: "Frontend & Tools",
-      skills: ["JavaScript", "Html", "React", "Bootstrap", "Vue.js", "Visual Studio Code"]
+      skills: ["JavaScript", "HTML", "React", "Vue.js", "Bootstrap", "Tailwind CSS", "Vite", "Micro Frontend", "Power BI", "Superset"]
+    },
+    {
+      title: "Backend & Tools",
+      skills: ["Next.js (API Routes)", "ASP.NET", "Node.js", "REST API", "Entity Framework", "Python"]
+    },
+    {
+      title: "Cloud & DevOps",
+      skills: ["Google Cloud Platform (GCP)", "Docker", "GitLab"]
+    },
+    {
+      title: "Development Tools",
+      skills: ["Visual Studio Code", "Visual Studio"]
     }
   ];
 

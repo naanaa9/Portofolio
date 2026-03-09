@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
+import { Logo } from "./Logo";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,14 +39,11 @@ export function Navigation() {
     >
       <div className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between h-12 md:h-16">
-          {/* LOGO / HOME BUTTON */}
-          <button
+          {/* LOGO */}
+          <Logo 
+            variant="gradient" 
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="text-lg md:text-xl font-bold hover:text-primary transition-colors"
-            aria-label="Home"
-          >
-            DK
-          </button>
+          />
 
           {/* DESKTOP NAVIGATION */}
           <div className="hidden md:flex items-center gap-8">

@@ -1,4 +1,4 @@
-import { LinkedinIcon, Mail, Heart } from "lucide-react";
+import { GitlabIcon, GithubIcon, ArrowRight, LinkedinIcon, Mail } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -8,21 +8,38 @@ export function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-center gap-6">
           <div className="flex gap-6">
+              <a
+              href="https://github.com/naanaa9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full hover:bg-accent transition-colors touch-manipulation"
+              aria-label="GitHub"
+            >
+              <GithubIcon className="w-6 h-6" />
+            </a>
+
+            <a
+              href="https://gitlab.com/dianaksm789"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full hover:bg-accent transition-colors touch-manipulation"
+              aria-label="GitLab"
+            >
+              <GitlabIcon className="w-6 h-6" />
+            </a>
             <a 
               href="https://www.linkedin.com/in/dianakusumaningsih9/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-2 hover:text-primary transition-colors touch-manipulation"
-              aria-label="LinkedIn"
+              className="p-3 rounded-full hover:bg-accent transition-colors touch-manipulation"
             >
-              <LinkedinIcon className="w-5 h-5" />
+              <LinkedinIcon className="w-6 h-6" />
             </a>
             <a 
               href="mailto:dianaksm789@gmail.com"
-              className="p-2 hover:text-primary transition-colors touch-manipulation"
-              aria-label="Email"
+              className="p-3 rounded-full hover:bg-accent transition-colors touch-manipulation"
             >
-              <Mail className="w-5 h-5" />
+              <Mail className="w-6 h-6" />
             </a>
           </div>
           

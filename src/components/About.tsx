@@ -42,10 +42,10 @@ export function About() {
   ];
 
   return (
-    <section id="about" className="py-20 px-4 bg-muted/30">
+    <section id="about" className="py-12 md:py-20 px-4 bg-muted/30">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl mb-4">About Me</h2>
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl mb-4">About Me</h2>
           <div className="w-20 h-1 bg-primary mx-auto" />
         </div>
         
@@ -62,7 +62,7 @@ export function About() {
           
           <div className="space-y-6">
           <p
-            className="text-lg leading-relaxed"
+            className="text-base sm:text-lg leading-relaxed"
             style={{ textAlign: "justify" }}
           >
             I am a Computer Science graduate from Mercu Buana University with a strong
@@ -75,7 +75,7 @@ export function About() {
           </p>
 
           <p
-            className="text-lg leading-relaxed"
+            className="text-base sm:text-lg leading-relaxed"
             style={{ textAlign: "justify" }}
           >
             I am a team-oriented individual with excellent communication skills, fluent
@@ -86,11 +86,11 @@ export function About() {
         </div>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           {highlights.map((highlight, index) => (
             <div 
               key={index}
-              className="bg-card p-8 rounded-xl border border-border hover:shadow-lg transition-shadow"
+              className="bg-card p-6 md:p-8 rounded-xl border border-border hover:shadow-lg transition-shadow"
             >
               <highlight.icon className="w-12 h-12 mb-4 text-primary" />
               <h3 className="mb-2">{highlight.title}</h3>

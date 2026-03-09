@@ -1,7 +1,7 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, GithubIcon } from "lucide-react";
 
 export function Projects() {
   const projects = [
@@ -21,23 +21,23 @@ export function Projects() {
       github: "https://github.com/naanaa9/internship-management-system",
       demo: "https://task-management-app-eta-two.vercel.app"
     },
-    {
-      title: "RESTful API Microservices",
-      description: "High-performance microservices architecture using Symfony and PostgreSQL. Implements OAuth2, rate limiting, and serves 5M+ requests daily.",
-      image: "https://images.unsplash.com/photo-1510832758362-af875829efcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGRlc2lnbiUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NjAwNDI3MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Symfony", "PostgreSQL", "Docker", "OAuth2"],
-      github: "https://github.com",
-      demo: "https://example.com"
-    }
+    // {
+    //   title: "RESTful API Microservices",
+    //   description: "High-performance microservices architecture using Symfony and PostgreSQL. Implements OAuth2, rate limiting, and serves 5M+ requests daily.",
+    //   image: "https://images.unsplash.com/photo-1510832758362-af875829efcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGRlc2lnbiUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NjAwNDI3MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    //   tags: ["Symfony", "PostgreSQL", "Docker", "OAuth2"],
+    //   github: "https://github.com",
+    //   demo: "https://example.com"
+    // }
   ];
 
   return (
-    <section id="projects" className="py-20 px-4">
+    <section id="projects" className="py-12 md:py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl mb-4">Featured Projects</h2>
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl mb-4">Featured Projects</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-4" />
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             A selection of recent PHP projects showcasing backend development and API design
           </p>
         </div>
@@ -57,7 +57,7 @@ export function Projects() {
                   />
                 </div>
                 
-                <div className="p-8 flex flex-col justify-center">
+                <div className="p-6 md:p-8 flex flex-col justify-center">
                   <h3 className="mb-3">{project.title}</h3>
                   <p className="text-muted-foreground mb-6">{project.description}</p>
                   
@@ -72,7 +72,7 @@ export function Projects() {
                   <div className="flex gap-3">
                     <Button variant="outline" size="sm" className="gap-2" asChild>
                       <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        <Github className="w-4 h-4" />
+                        <GithubIcon className="w-4 h-4" />
                         Code
                       </a>
                     </Button>

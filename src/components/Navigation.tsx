@@ -36,12 +36,12 @@ export function Navigation() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 md:py-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+      <div className="max-w-6xl mx-auto px-4 py-3">
+        <div className="flex items-center justify-between h-12 md:h-16">
           {/* LOGO / HOME BUTTON */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="text-xl font-bold hover:text-primary transition-colors"
+            className="text-lg md:text-xl font-bold hover:text-primary transition-colors"
             aria-label="Home"
           >
             DK

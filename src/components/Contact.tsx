@@ -1,48 +1,12 @@
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
 import { Mail, Phone } from "lucide-react";
-import { useState, useRef } from "react";
-import { toast } from "sonner";
-import emailjs from "@emailjs/browser";
 
 export function Contact() {
-  const formRef = useRef<HTMLFormElement>(null);
-
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    if (!formRef.current) return;
-
-    emailjs
-      .sendForm(
-        "service_rd558k7",   
-        "template_a2vljmn",  
-        formRef.current,
-        "-6rVcMVENqPbHb3go" 
-      )
-      .then(() => {
-        toast.success("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" });
-      })
-      .catch((error) => {
-        console.error("EmailJS Error:", error);
-        toast.error("Failed to send message.");
-      });
-  };
-
   const contactInfo = [
     {
       icon: Mail,
       label: "Email",
-      value: "dianashrk22@gmail.com",
-      href: "mailto:dianashrk22@gmail.com",
+      value: "dianaksm789@gmail.com",
+      href: "mailto:dianaksm789@gmail.com",
     },
     {
       icon: Phone,
@@ -53,17 +17,17 @@ export function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 px-4">
+    <section id="contact" className="py-12 md:py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl mb-4">Get In Touch</h2>
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl mb-4">Get In Touch</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-4" />
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Have a project in mind or just want to chat? I'd love to hear from you!
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="max-w-2xl mx-auto">
           <div className="space-y-8">
             <div>
               <h3 className="mb-6">Contact Information</h3>
@@ -94,62 +58,6 @@ export function Contact() {
                 Whether you have a question or just want to say hi, my inbox is always open.
               </p>
             </div>
-          </div>
-
-          <div>
-            <form
-              ref={formRef}
-              onSubmit={handleSubmit}
-              className="space-y-6"
-            >
-              <div>
-                <label htmlFor="name" className="block mb-2">Name</label>
-                <Input
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={(e) =>
-                    setFormData({ ...formData, name: e.target.value })
-                  }
-                  placeholder="Your name"
-                  required
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block mb-2">Email</label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={(e) =>
-                    setFormData({ ...formData, email: e.target.value })
-                  }
-                  placeholder="your.email@example.com"
-                  required
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block mb-2">Message</label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={(e) =>
-                    setFormData({ ...formData, message: e.target.value })
-                  }
-                  placeholder="Tell me about your project..."
-                  rows={6}
-                  required
-                />
-              </div>
-
-              <Button type="submit" size="lg" className="w-full">
-                Send Message
-              </Button>
-            </form>
           </div>
         </div>
       </div>

@@ -11,12 +11,12 @@ export function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 bg-muted/30">
+    <section id="skills" className="py-12 md:py-20 px-4 bg-muted/30">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl mb-4">Skills & Technologies</h2>
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl mb-4">Skills & Technologies</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-4" />
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Technologies and tools I work with to bring ideas to life
           </p>
         </div>
@@ -25,7 +25,7 @@ export function Skills() {
           {skillCategories.map((category, index) => (
             <div 
               key={index}
-              className="bg-card p-8 rounded-xl border border-border"
+              className="bg-card p-6 md:p-8 rounded-xl border border-border"
             >
               <h3 className="mb-6 text-center">{category.title}</h3>
               <div className="flex flex-wrap gap-3 justify-center">

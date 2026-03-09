@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { Gitlab ,Github, ArrowRight, Linkedin, Mail } from "lucide-react";
+import { GitlabIcon, GithubIcon, ArrowRight, LinkedinIcon, Mail } from "lucide-react";
 
 export function Hero() {
   const scrollToSection = (id: string) => {
@@ -8,15 +8,15 @@ export function Hero() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center px-4 py-16 md:py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/10 -z-10" />
       
       <div className="max-w-4xl mx-auto text-center space-y-8">
         <div className="space-y-4">
-          <h1 className="text-5xl md:text-7xl">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
             Hi, I'm <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">Diana Kusumaningsih</span>
           </h1>
-          <h2 className="text-2xl md:text-4xl text-muted-foreground">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-muted-foreground">
             Computer Science
           </h2>
         </div>
@@ -48,32 +48,32 @@ export function Hero() {
             href="https://github.com/naanaa9"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-full hover:bg-accent transition-colors"
+            className="p-3 rounded-full hover:bg-accent transition-colors touch-manipulation"
             aria-label="GitHub"
           >
-            <Github className="w-6 h-6" />
+            <GithubIcon className="w-6 h-6" />
           </a>
 
           <a
             href="https://gitlab.com/dianaksm789"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-full hover:bg-accent transition-colors"
+            className="p-3 rounded-full hover:bg-accent transition-colors touch-manipulation"
             aria-label="GitLab"
           >
-            <Gitlab className="w-6 h-6" />
+            <GitlabIcon className="w-6 h-6" />
           </a>
           <a 
             href="https://www.linkedin.com/in/dianakusumaningsih9/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-3 rounded-full hover:bg-accent transition-colors"
+            className="p-3 rounded-full hover:bg-accent transition-colors touch-manipulation"
           >
-            <Linkedin className="w-6 h-6" />
+            <LinkedinIcon className="w-6 h-6" />
           </a>
           <a 
             href="mailto:dianaksm789@gmail.com"
-            className="p-3 rounded-full hover:bg-accent transition-colors"
+            className="p-3 rounded-full hover:bg-accent transition-colors touch-manipulation"
           >
             <Mail className="w-6 h-6" />
           </a>
